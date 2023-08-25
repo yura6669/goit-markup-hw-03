@@ -78,12 +78,12 @@ button {
   display: flex;
   margin-right: auto;
   align-items: center;
+  padding: 24px 0;
 }
 
 .navigation-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .navigation-link {
