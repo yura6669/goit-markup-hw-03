@@ -25,6 +25,7 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 img {
@@ -42,14 +43,11 @@ button {
   margin: 0 auto;
 }
 
-.header {
-  border-bottom: 1px solid #e7e9fc;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
 .container-header {
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -165,7 +163,6 @@ button {
 .advantage-list {
   display: flex;
   gap: 24px;
-  justify-content: center;
 }
 
 .visually-hidden {
@@ -182,7 +179,7 @@ button {
 }
 
 .advantage-item {
-  width: calc((100% - 72px) / 4);
+  width: calc((100% - (24px * 3)) / 4);
 }
 
 .advantage-title {
@@ -294,6 +291,7 @@ button {
 .portfolio-descr {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-app-title {
