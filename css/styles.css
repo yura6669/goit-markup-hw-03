@@ -25,7 +25,6 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
 }
 
 img {
@@ -38,8 +37,8 @@ button {
 
 .container {
   width: 1158px;
-  padding-left: 146px;
-  padding-right: 146px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -49,6 +48,8 @@ button {
 
 .container-header {
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo {
@@ -107,8 +108,6 @@ button {
 .contacts-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .contacts-link {
@@ -158,11 +157,9 @@ button {
   background-color: #404bbf;
 }
 
-.advantage-container {
+.advantage {
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .advantage-list {
@@ -214,15 +211,10 @@ button {
   text-transform: capitalize;
 }
 
-.team-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title {
@@ -272,11 +264,9 @@ button {
   letter-spacing: 0.32px;
 }
 
-.container-portfolio {
+.portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .portfolio-title {
@@ -328,10 +318,6 @@ button {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.footer-container {
-  padding-left: 0;
 }
 
 .logo-footer {
