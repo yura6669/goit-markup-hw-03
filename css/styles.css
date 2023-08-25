@@ -4,11 +4,53 @@
   list-style: none;
   text-decoration: none;
   font-style: normal;
-  background-color: #fff;
 }
 
 body {
   color: #434455;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1158px;
+  margin-left: 146px;
+  margin-right: 146px;
+  /* border: 1px solid red; */
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container-header {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo {
@@ -21,6 +63,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-header-studio-text {
@@ -31,6 +74,16 @@ body {
   font-weight: 700;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+}
+
+.navigation {
+  display: flex;
+  margin-right: auto;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 40px;
 }
 
 .navigation-link {
@@ -52,6 +105,11 @@ body {
   letter-spacing: 0.32px;
 }
 
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
 .contacts-link {
   color: #434455;
 }
@@ -63,34 +121,60 @@ body {
 
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
+  margin-bottom: 120px;
 }
 
 .hero-title {
   color: #fff;
-  background-color: #2e2f42;
-  text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  width: 496px;
+  margin: 0 auto;
 }
 
 .hero-button {
+  margin-top: 48px;
   background-color: #4d5ae5;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
 }
 
 .hero-button:focus,
 .hero-button:hover {
   background-color: #404bbf;
-  cursor: pointer;
+}
+
+.advantage {
+  margin-bottom: 120px;
+}
+
+.advantage-list {
+  display: inline-flex;
+  gap: 24px;
 }
 
 .advantage-header {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   visibility: hidden;
 }
 
@@ -99,6 +183,8 @@ body {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
+  width: 264px;
 }
 
 .advantage-descr {
@@ -118,16 +204,37 @@ body {
   text-transform: capitalize;
 }
 
+.container-team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .team {
   background-color: #f4f4fd;
 }
 
-.team-title {
+.team-list {
+  display: flex;
+  gap: 24px;
+  padding-top: 72px;
+}
+
+.team-item {
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-name {
   text-align: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 .team-descr {
@@ -137,6 +244,25 @@ body {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+  padding-bottom: 32px;
+}
+
+.container-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 72px;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-item {
+  background-color: #fff;
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-app-title {
@@ -144,6 +270,9 @@ body {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-top: 8px;
 }
 
 .portfolio-app-descr {
@@ -152,10 +281,17 @@ body {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 
 .footer {
   background-color: #2e2f42;
+}
+
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .logo-footer-studio-text {
@@ -171,9 +307,10 @@ body {
 
 .footer-text {
   color: #f4f4fd;
-  background-color: #2e2f42;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+  width: 264px;
+  padding-top: 17.5px;
 }
