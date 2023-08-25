@@ -83,6 +83,9 @@ button {
 .navigation-list {
   display: flex;
   gap: 40px;
+}
+
+.navigation-item {
   padding: 24px 0;
 }
 
